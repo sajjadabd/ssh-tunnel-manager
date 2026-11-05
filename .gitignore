@@ -1,0 +1,26 @@
+# Python bytecode & cache
+__pycache__/
+*.py[cod]
+*$py.class
+.venv/
+venv/
+env/
+
+# PyInstaller build artifacts
+build/
+dist/
+*.spec
+
+# SENSITIVE: Never commit your saved VPS credentials
+ssh-info.ini
+
+# Downloaded TUN binaries and drivers
+tun/
+wintun.dll
+tun2socks.exe
+
+# OS / Editor files
+.vscode/
+.idea/
+Thumbs.db
+Desktop.ini
