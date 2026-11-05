@@ -78,7 +78,7 @@ Ensure you have **Python 3.10+** installed on Windows.
 1. Clone the repository:
    ```bash
    git clone https://github.com/sajjadabd/ssh-tunnel-manager.git
-   cd <your-repo-name>
+   cd ssh-tunnel-manager
    ```
 
 2. Install dependencies:
