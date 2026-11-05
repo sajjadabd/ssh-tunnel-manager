@@ -4,9 +4,11 @@ on:
   push:
     branches: [ "main", "master" ]
     tags: [ "v*" ]
-  pull_request:
-    branches: [ "main", "master" ]
   workflow_dispatch:
+
+# Give GitHub Actions permission to publish releases
+permissions:
+  contents: write
 
 jobs:
   build:
@@ -45,10 +47,13 @@ jobs:
           path: dist/SSHTunnelManager.exe
           if-no-files-found: error
 
-      - name: Release Executable
-        if: startsWith(github.ref, 'refs/tags/')
+      # Automatically creates or updates the "Latest" release on every push
+      - name: Publish to GitHub Releases
         uses: softprops/action-gh-release@v2
         with:
+          tag_name: "latest"
+          name: "Latest Pre-built Executable"
+          body: "Automated latest build from commit ${{ github.sha }}."
           files: dist/SSHTunnelManager.exe
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
