@@ -68,7 +68,7 @@ Built with a custom dark-mode Tkinter engine, it features a card-style UI with f
 ## 🚀 Quick Start
 
 ### Option 1: Pre-built Executable (Recommended)
-1. Head to the **[Releases](https://github.com/<your-username>/<your-repo-name>/releases)** page.
+1. Head to the **[Releases](https://github.com/sajjadabd/ssh-tunnel-manager/releases)** page.
 2. Download `SSHTunnelManager.exe`.
 3. Run the executable. *(If using TUN mode, run as Administrator or accept the in-app UAC elevation prompt).*
 
@@ -77,7 +77,7 @@ Ensure you have **Python 3.10+** installed on Windows.
 
 1. Clone the repository:
    ```bash
-   git clone https://github.com/<your-username>/<your-repo-name>.git
+   git clone https://github.com/sajjadabd/ssh-tunnel-manager.git
    cd <your-repo-name>
    ```
 
